@@ -6,13 +6,15 @@
 let answerUser = prompt('Пожалуйста введите значение:');
 ++answerUser;
 
-console.log(typeof(answerUser));
+//console.log(typeof(answerUser));
 
-
-
-if (typeof(answerUser) != "number"){
-  alert('Упс, кажется, вы ошиблись'); 
+if ((typeof(answerUser) != "number") || Number.isNaN(answerUser)){
+  alert('Упс, кажется, вы ошиблись') 
 } else {
-    if (console.log(typeof(answerUser));
-  console.log(answerUser);) 
+  ab = answerUser % 2;
+  if (ab = 0){
+      console.log('Чётное')
+  }else {  
+      console.log('Нечётное')    
+  }   
 }
